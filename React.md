@@ -177,13 +177,13 @@ Consider you don’t want to execute document title update each time on renderin
  ```
 </li>
 <li><b>useMemo( ) - </b></li>
+<li><b>useQuery( ) - </b>useQuery is a custom hook within React Query used to fetch data in a React application. Under the hood, these hooks manage lots of things such as caching data after the initial fetch, re-fetching data in the background, etc.</li>
 <li><b>useContext():</b>
  It is used for creating common data that is to be accessed by the components hierarchy without having to pass the props down to each level.</li>
 <li><b>useReducer() :</b> It is used when there is a complex state logic that is having several sub-values or when the upcoming state is dependent on the previous state. It will also enable you to optimization of component performance that will trigger deeper updates as it is permitted to pass the dispatch down instead of callbacks.</li>
 <li><b>useCallback() : </b>This is useful while passing callbacks into the optimized child components and depends on the equality of reference for the prevention of unneeded renders.</li>
 <li><b>useRef() : </b> It will permit creating a reference to the DOM element directly within the functional component.</li>
-<li><b> </b></li>
-<li><b> </b></li>
+
 </ul> </li>
 <li><b> Styling in React</b> <ul>
 
@@ -237,7 +237,6 @@ const RandomComponent = () => {
 }
 ```
 </li>
-<li><b> </b></li>
 </ul> </li>
 <li><b> Ways to Optimize React Performance: </b>
 <ul>
@@ -281,6 +280,11 @@ With JSX, you pass a function as the event handler, rather than a string in HTML
 <Button onClick={() => lightItUp} />
 ```
 </li>
+<li><b> Fragments: </b>Multiple parts of the component needs to be wrapped with something to become a node. Fragment is a wrapper around multiple components that then becomes a single node but it doesn’t render anything to the DOM — it is an invisible wrapper.</li>
+<li><b> Why is it better to use Fragments instead of Divs?  </b>Fragments are a bit faster and use less memory by not creating an extra DOM node. But, this only has a real benefit on very large and deep trees. Some CSS mechanisms like Flexbox and CSS Grid have a special parent-child relationships, and adding divs in the middle makes it hard to keep the desired layout. Also, The DOM Inspector is less cluttered.</li>
+<li><b>Hashmaps/Map Objects:  </b>A HashMap is a data structure that allows you to store key-value pairs, where each key is unique. It provides fast access to values based on their keys. To implement a HashMap, we can use an array to store the key-value pairs.</li>
+
+
 </ul>
 
 ####  <ins>React Redux:
@@ -292,22 +296,10 @@ With JSX, you pass a function as the event handler, rather than a string in HTML
 <li><b>Reducer: </b>Specifies how the application's state changes in response to actions sent to the store.</li>
 </ul>
 </li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
-<li><b> </b></li>
+
+### <ins> Webpack
+<li>Webpack is an open-source JavaScript module bundler. Its main purpose is to put all of the assets, including Javascript, images, fonts, and CSS, in a dependency graph. Webpack gives control over how to treat different assets it encounters.</li>
+
 
 
  
